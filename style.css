@@ -1,1 +1,12 @@
-/* CSS Style Sheet */
+body{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: auto;
+    border: 100px;
+    padding: 100px;
+    background-color: rgb(255, 255, 245);
+}
+
+p{
+    font-size: 22px;
+}
