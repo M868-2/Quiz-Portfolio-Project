@@ -102,69 +102,7 @@ function btnClicked() {
       qns.innerHTML += '<p><button id="submit-btn" >Submit</button></p>';
 
     }
-
-    document.getElementById("submit-btn").addEventListener("click", btnClicked);
-
-    function btnClicked() {
-      // VARIABLES
-      qn1 = true;
-      qn2 = true;
-      qn3 = true;
-      qn4 = true;
-      qn5 = true;
-      let q1 = document.getElementById("qnOne").value;
-      let q2 = document.getElementById("qnTwo").value.toLowerCase();
-      let q3 = document.getElementById("qnThree").value;
-      let q4 = document.getElementById("qnFour").value.toLowerCase();
-      let q5 = document.getElementById("qnFive").value.toLowerCase();
-    
-      let scoreCounter = 0;
-    
-      // IF STATEMENTS
-      if (q1 === "12" || q1 === "12 ") {
-        scoreCounter++;
-        f1.innerHTML = "correct";
-      } else {
-        f1.innerHTML = "incorrect";
-        qn1 = false;
-      }
-    
-      if (q2 === "cologne" || q1 === "cologne ") {
-        scoreCounter++;
-        f2.innerHTML = "correct";
-      } else {
-        f2.innerHTML = "incorrect";
-        qn2 = false;
-      }
-    
-      if (q3 === "10" || q3 === "10 ") {
-        scoreCounter++;
-        f3.innerHTML = "correct";
-      } else {
-        f3.innerHTML = "incorrect";
-        qn3 = false;
-      }
-    
-      if (q4 === "elephant" || q4 === "elephant " || q4 === "elephants" || q4 === "elephants ") {
-        scoreCounter++;
-        f4.innerHTML = "correct";
-      } else {
-        f4.innerHTML = "incorrect";
-        qn4 = false;
-      }
-    
-      if (q5 === "asia" || q5 === "asia ") {
-        scoreCounter++;
-        f5.innerHTML = "correct";
-      } else {
-        f5.innerHTML = "incorrect";
-        qn5 = false;
-      }
-    
-      frac.innerHTML = `${scoreCounter}/5`;    
-
-    } 
-} else {
+  } else {
     msg.innerHTML = "So you're the smart one";
   }
 
